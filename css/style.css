@@ -162,3 +162,18 @@ body::before {
     filter: blur(12px);
     opacity: 0.82;
 }
+
+/* Mantém o rodapé no fim da tela em páginas curtas */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
