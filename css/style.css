@@ -143,3 +143,22 @@ footer {
 .card a { display: inline-block; margin: 4px 12px 4px 0; color: #0057b8; }
 section p + p { margin-top: 16px; }
 a:focus-visible, button:focus-visible { outline: 3px solid #0057b8; outline-offset: 4px; }
+
+/* Fundo sutil com referência à programação e robótica */
+body {
+    position: relative;
+    isolation: isolate;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: -16px;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(247, 247, 247, 0.52), rgba(247, 247, 247, 0.52)),
+        url("../assets/fundo-portfolio.jpg") center / cover no-repeat;
+    filter: blur(12px);
+    opacity: 0.82;
+}
